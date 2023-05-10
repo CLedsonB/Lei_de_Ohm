@@ -22,48 +22,48 @@ linha()
 float tensao()
 	{
 	float u1, u2, r, p, i, u3;
-	printf("Ohms(R) =  "); scanf("%f", &r);
-	printf("\nWatts(P) = "); scanf("%f", &p);
-	printf("\nAmpéres(I) = "); scanf("%f", &i);
+	printf("\tOhms(R) =  "); scanf("%f", &r);
+	printf("\n\tWatts(P) = "); scanf("%f", &p);
+	printf("\n\tAmpéres(I) = "); scanf("%f", &i);
 	u1=r*i;
 	u2=p/i;
 	u3=p*r;
-	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...");
+	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...\n\n");
 
-	printf("\n\nTensão(Volts) = %.2f  para U= R*I", u1);
-	printf("\nTensão(Volts) = %.2f  para U= P/I", u2);
-	printf("\nTensão(Volts) = %.2f  para U= RAIZ P*R",pow(u3, 0.5));
+	printf("\tTensão(Volts) = %.2f  para U= R*I", u1);
+	printf("\n\tTensão(Volts) = %.2f  para U= P/I", u2);
+	printf("\n\tTensão(Volts) = %.2f  para U= RAIZ P*R",pow(u3, 0.5));
 }
 float potencia()
 	{
 	float p1, p2, p3, r, u, i;
-	printf("Ohms(R) =  "); scanf("%f", &r);
-	printf("\nTensão(U) = "); scanf("%f", &u);
-	printf("\nAmpéres(I) = "); scanf("%f", &i);
+	printf("\tOhms(R) =  "); scanf("%f", &r);
+	printf("\n\tTensão(U) = "); scanf("%f", &u);
+	printf("\n\tAmpéres(I) = "); scanf("%f", &i);
 	p1=i*u;
 	p2=pow(i,2)*r;
 	p3=pow(u,2)/r;
-	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...");
+	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...\n\n");
 
-	printf("\n\nPotência(Watts) = %.2f  para P= I*U" , p1);
-	printf("\nPotência(Watts) = %.2f  para P= R*I^2", p2);
-	printf("\nPotência(Watts) = %.2f  para P=U^2/R",p3);		
+	printf("\tPotência(Watts) = %.2f  para P= I*U" , p1);
+	printf("\n\tPotência(Watts) = %.2f  para P= R*I^2", p2);
+	printf("\n\tPotência(Watts) = %.2f  para P=U^2/R",p3);		
 }
 		
 float corrente()
 	{
 	float i1, i2, i3, r, u, p;
-	printf("Ohms(R) =  "); scanf("%f", &r);
-	printf("\nTensão(U) = "); scanf("%f", &u);
-	printf("\nPotência(P) = "); scanf("%f", &p);
+	printf("\tOhms(R) =  "); scanf("%f", &r);
+	printf("\n\tTensão(U) = "); scanf("%f", &u);
+	printf("\n\tPotência(P) = "); scanf("%f", &p);
 	i1=u/r;
 	i2=p/u;
 	i3=p/r;
 
-	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...");
-	printf("\n\nCorrente(Ampéres) = %.2f  para I= U/R " , i1);
-	printf("\nCorrente(Ampéres) = %.2f  para I= P/U ", i2);
-	printf("\nCorrente(Ampéres) = %.2f  para I= RAIZ P/R",pow(i3, 0.5));
+	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...\n\n");
+	printf("\tCorrente(Ampéres) = %.2f  para I= U/R " , i1);
+	printf("\n\tCorrente(Ampéres) = %.2f  para I= P/U ", i2);
+	printf("\n\tCorrente(Ampéres) = %.2f  para I= RAIZ P/R",pow(i3, 0.5));
 }
 float resistencia()
 	{
@@ -74,10 +74,10 @@ float resistencia()
 	r1=u/i;
 	r2=pow(u,2)/p;
 	r3=p/pow(i,2);
-	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...");
-	printf("\n\nResistência = %.2f  para R= U/I" , r1);
-	printf("\nResistência = %.2f  para R= U^2/P", r2);
-	printf("\nResistência = %.2f  para R=P/I^2",r3);
+	printf("\n\n\tTESTANDO AS FORMÚLAS POSSIVEÍS...\n\n");
+	printf("\tResistência = %.2f  para R= U/I" , r1);
+	printf("\n\tResistência = %.2f  para R= U^2/P", r2);
+	printf("\n\tResistência = %.2f  para R=P/I^2",r3);
 }
 
 int main(){
@@ -101,7 +101,7 @@ int main(){
 					system("color 17");
 					printf("\n\n\t\tERROR 404");
 				}
-		printf("\nDeseja Recalcular? "); getchar(); scanf("%c", &b);
+		printf("\n\tDeseja Recalcular? "); getchar(); scanf("%c", &b);
 		}
 	while(b!='n' && b!='N');
 	//ENQUANTO O CARACTERE INSERIDO FOR DIFERENTE DE N, ELE CONTINUARÁ EXECUTANDO.
